@@ -14,9 +14,8 @@ void custo() {
 
   if (custo <= 12000.00) {
     final double distribuidor = (custo * 0.05);
-   print(
-        "custo: R\$ $custo + distribuidor: R\$ $distribuidor + imposto: isento");
-    print(custo + distribuidor);
+    print(
+        "custo: R\$ $custo + distribuidor: R\$ $distribuidor + imposto: isento = R\$ ${custo + distribuidor}");
     return;
   }
   if (custo <= 25000.00) {
@@ -24,14 +23,12 @@ void custo() {
     final double imposto = custo * 0.15;
 
     print(
-        "custo: R\$ $custo + distribuidor: R\$ $distribuidor + imposto: R\$ $imposto");
-    print(custo + distribuidor + imposto);
+        "custo: R\$ $custo + distribuidor: R\$ $distribuidor + imposto: R\$ $imposto = R\$ ${custo + distribuidor + imposto}");
     return;
   }
   final double distribuidor = custo * 0.15;
   final double imposto = custo * 0.2;
 
   print(
-      "custo: R\$ $custo + distribuidor: R\$ $distribuidor + imposto: R\$ $imposto");
-  print(custo + distribuidor + imposto);
+      "custo: R\$ $custo + distribuidor: R\$ $distribuidor + imposto: R\$ $imposto = R\$ ${custo + distribuidor + imposto}");
 }
